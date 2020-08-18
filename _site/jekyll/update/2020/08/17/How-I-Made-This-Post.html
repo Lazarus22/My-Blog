@@ -45,41 +45,44 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>All right. I thought for this week’s blog post it would be fun to do a blog about making a blog. So this post is about how this post was made.</p>
+    <p><img src="/assets/snake.jpg" alt="My helpful screenshot" />
+All right. I thought for this week’s blog post it would be fun to do a blog about making a blog. So this post is about how this post was made.</p>
 
 <p>So one thing I think is interesting are static sites.</p>
 
-<p>Static sites are often one of the first things web developers, learn how to do, and they’re often kind of glanced over fairly quickly. To be moved on to more interesting and dynamic things. But static sites are actually pretty cool. And looking back, they have well developed communities, and they’re worth your time. They’re not just a stepping stone to do more interesting things, they are inherently valuable.</p>
+<p>Static sites are often one of the first things web developers learn how to do, and they’re often glanced over fairly quickly. To be moved on to more interesting and dynamic things. But static sites are actually pretty cool. Looking back, they have well developed communities, and they’re worth your time. They’re not just a stepping stone to do more interesting things.</p>
 
-<p>So, benefits of static site static sites are they are incredibly fast and they’re very secure, posting can be inexpensive or completely free. One can track and coordinate versioning with GitHub. And they exist outside of content management frameworks which are between the user and the HTML you’re trying to share.</p>
+<p>So, some benefits of static site static sites are they are fast and secure, posting can be inexpensive or completely free. One can track and coordinate versioning with GitHub. And they exist outside of content management frameworks which are between the user and the HTML you’re trying to share.</p>
 
 <p>What are static sites good for?</p>
 
 <p>Blogs often work great for this, which is one reason I chose this project.</p>
 
-<p>Two is documentation. So, how something works, which doesn’t need to be updated frequently.</p>
+<p>They do well with documentation. So, how something works, which doesn’t need to be updated frequently.</p>
 
 <p>Finally informational sites or brochure sites, so everything from a restaurant’s menu site to just showing off a product or something along those lines.</p>
 
-<p>So to build a static site it helps to have a static site generator, I went to <a href="https://staticsitegenerators.net/">https://staticsitegenerators.net/</a> you’ll see its a deep rabbit hole.</p>
+<p>So to build a static site it helps to have a static site generator, I went to <a href="https://staticsitegenerators.net/">https://staticsitegenerators.net/</a> and you’ll see its a deep rabbit hole.</p>
 
-<p>One the most popular ones that’s also Ruby based is called <a href="https://jekyllrb.com/">Jekyll</a>, so Jekyll is what I’m going to be using to build my site. Jekyll is a static site generator created using Ruby and installed with a Ruby gem. So in this way, it’s very similar to Rails. Except, unlike Rails, its focus is only static sites. So, while its abilities are more limited, they are at the same time a bit more user friendly in that they have a smaller scope.</p>
+<p><img src="/assets/screenshot.jpg" alt="My helpful screenshot" /></p>
 
-<p>I got this Jekyll site up and running in 90 minutes with no experience in Jekyll. So if you’re familiar and comfortable with basic Rails concepts, then you’re not gonna have any trouble with Jekyll, Jekyll is significantly more pared down and focused.</p>
+<p>One the most popular ones that’s also Ruby based is called <a href="https://jekyllrb.com/">Jekyll</a>, Jekyll is what I’m going to be using to build my site. Jekyll is a static site generator created using Ruby and installed with a Ruby gem. It’s very similar to Rails. Except, unlike Rails, its focus is only static sites. So, while its abilities are more limited, they are at the same time a bit more user friendly in that they have a smaller scope.</p>
+
+<p>I got this Jekyll site up and running in 90 minutes with no experience in Jekyll. If you’re familiar and comfortable with basic Rails concepts, then you’re not gonna have any trouble with Jekyll, Jekyll is significantly more pared down and focused. I found the official Jekyll documentation quite thorough but in conjunction with this <a href="https://learn.cloudcannon.com/jekyll-cheat-sheet/">Jekyll cheat sheet</a> and a copy of <a href="https://www.oreilly.com/library/view/working-with-static/9781491960936/">O’reilly’s</a> <em>Working With Static Sites</em> I had more than enough information to sail though this quickly.</p>
 
 <p>I had an empty project open in VS code and I typed, <code class="language-plaintext highlighter-rouge">gem install Jekyll</code> into the terminal. Once that was up and running, I typed <code class="language-plaintext highlighter-rouge">Jekyll</code> to ensure it was installed correctly. To begin a new Jekyll project I wrote <code class="language-plaintext highlighter-rouge">jekyll new project_name</code>. That generated all the file structure in the same way running <code class="language-plaintext highlighter-rouge">rails new project</code> generates it’s own file structure. This theme you see is the default theme that Jekyll installed, but there are other more rubust themes that can be used. Jekyll uses markdown and HTML for posts but markdown is a bit simpler, and for my purposes, perfectly sufficient.</p>
 
-<p>Like Rails, once that was all built I typed <code class="language-plaintext highlighter-rouge">Jekyll serve</code> to get the server spinning, and I could see my Jekyll server, instead of localhost 3000, mine was at a local IP address, but in terms of building it was a very similar process.</p>
+<p>Like Rails, once that was all built I typed <code class="language-plaintext highlighter-rouge">Jekyll s</code> to get the server running, and I could see my Jekyll server, instead of localhost 3000, mine was at a local IP address, but in terms of building it was a very similar process.</p>
 
 <p>What’s interesting about Jekyll is one of its built in properties because it’s designed specifically for bloggers, so every new post file you create you name it with a date, is automatically titled it and indexed it properly without there being any work with controller files. So once that was done, I have my Jekyll file up and running, I have my project going and my servers spinning so then it was just a matter of getting the content written.</p>
 
-<p>By way of writing content I use <a href="otter.ai">otter.ai</a> to record this text. And then I went back through and formatted the text in google docs. Then formatted the links, images, and code snippets in an online markdown editor <a href="https://stackedit.io/app#">https://stackedit.io/app#</a> that let me see the changes I made live side by side with what I was doing. Once that was done I copied that over to my post.md file. Now I needed to deploy the site.</p>
+<p>By way of generating content I use otter.ai to record this text. I went back through and formatted the text in google docs. Then formatted the links and code snippets in an online markdown editor <a href="https://stackedit.io/app#">https://stackedit.io/app#</a> that let me see the changes I made live side by side with what I was doing. Once that was done I copied that over to vs code. Now I needed to deploy the site.</p>
 
-<p>There are a variety of ways to deploy. But the smart thing about Jekyll and deployment is that Jekyll works with GitHub. So, essentially, because GitHub is already hosting, all of our files online all you need is a third party site look at your GitHub repository and display it as a website.</p>
+<p>There are a variety of ways to deploy. The cool thing about Jekyll and deployment is that Jekyll works with GitHub. So, essentially, because GitHub is already hosting, all of our files online all you need is a third party site look at your GitHub repository and build it as a website.</p>
 
-<p>There are a host of hosts. And you can if you want you can do it this manually. I did some research, and because I wanted to build this as efficiently as possible. So I use a host called <a href="https://www.netlify.com/">netlify</a>. Netlify, essentially you link it to the GitHub repository of the website that you want to host. And it does all the hosting for you, and you can buy custom domains to show the site or you can just use the free built in domains that are just slightly less aesthetically pleasing, which is what I went with.</p>
+<p>There are a host of hosts. And you can if you want you can do it this manually. I did some research, and because I wanted to build this as efficiently as possible. I found a host called <a href="https://www.netlify.com/">netlify</a> known for its simplicity. Netlify, allows you link to the GitHub repository of the website that you want to host. You can buy custom domains or you can just use the free built in domains that are just slightly less aesthetically pleasing, which is what I went with.</p>
 
-<p>So what’s cool about this is because netlify is looking at my GitHub repository and not hosting the files itself, every time I want to update my blog, I just get push to my master branch, it will update the live site, which is, easy enough for me to understand. And that’s the how we got here. Thank you for your time.</p>
+<p>So what’s cool about this is because netlify is looking at my GitHub repository, so every time I want to update my blog, I just get push to my master branch, it will update the live site, which is, easy enough for me to understand. And that’s the how we got here. Thank you for your time.</p>
 
 
   </div><a class="u-url" href="/jekyll/update/2020/08/17/How-I-Made-This-Post.html" hidden></a>
