@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "How I Made This"
+title:  "A better title"
 date:   2020-08-17 19:31:26 -0400
 categories: jekyll update
 ---
