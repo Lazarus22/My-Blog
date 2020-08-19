@@ -32,7 +32,7 @@ I got this Jekyll site up and running in 90 minutes with no experience in Jekyll
 
 I had an empty project open in VS code and I typed, `gem install jekyll` into the terminal. Once that was up and running, I typed `jekyll` to ensure it was installed correctly. To begin a new Jekyll project I wrote `jekyll new project_name`. That generated all the file structure in the same way running `rails new project` generates it’s own file structure. This theme you see is the default theme that Jekyll installed, but there are other more rubust themes that can be used. Jekyll uses markdown and HTML for posts but markdown is a bit simpler, and for my purposes, perfectly sufficient.
 
-Like Rails, once that was all built I typed `Jekyll s` to get the server running, and I could see my Jekyll server, instead of localhost 3000, mine was at a local IP address, but in terms of building it was a very similar process.
+Like Rails, once that was all built I typed `jekyll s` to get the server running, and I could see my Jekyll server, instead of localhost 3000, mine was at a local IP address, but in terms of building it was a very similar process.
 
 What's interesting about Jekyll is one of its built in properties because it's designed specifically for bloggers, so every new post file you create you name it with a date, is automatically titled it and indexed it properly without there being any work with controller files. So once that was done, I have my Jekyll file up and running, I have my project going and my servers spinning so then it was just a matter of getting the content written.
 
@@ -42,5 +42,5 @@ There are a variety of ways to deploy. The cool thing about Jekyll and deploymen
 
 There are a host of hosts. And you can if you want you can do it this manually. I did some research, and because I wanted to build this as efficiently as possible. I found a host called [netlify](https://www.netlify.com/) known for its simplicity. Netlify, allows you link to the GitHub repository of the website that you want to host. You can buy custom domains or you can just use the free built in domains that are just slightly less aesthetically pleasing, which is what I went with.
 
-So what's cool about this is because netlify is looking at my GitHub repository, so every time I want to update my blog, I just get push to my master branch, or I can just edit a post in github itself, it will update the live site, which is, easy enough for me to understand. And that's the how we got here. Thank you for your time.
+So what's cool about this is because netlify is looking at my GitHub repository, so every time I want to update my blog, I just use `git push` to my master branch, or I can just edit a post in github itself, it will update the live site. And that's the how we got here. Thank you for your time.
 
