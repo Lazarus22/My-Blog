@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "A Post About Posts"
+title:  "How I Made This"
 date:   2020-08-17 19:31:26 -0400
 categories: jekyll update
 ---
@@ -43,4 +43,6 @@ There are a variety of ways to deploy. The cool thing about Jekyll and deploymen
 There are a host of hosts. And you can if you want you can do it this manually. I did some research, and because I wanted to build this as efficiently as possible. I found a host called [netlify](https://www.netlify.com/) known for its simplicity. Netlify, allows you link to the GitHub repository of the website that you want to host. You can buy custom domains or you can just use the free built in domains that are just slightly less aesthetically pleasing, which is what I went with.
 
 So what's cool about this is because netlify is looking at my GitHub repository, so every time I want to update my blog, I just use `git push` to my master branch, or I can just edit a post in github itself, it will update the live site. And that's the how we got here. Thank you for your time.
+
+![My helpful screenshot](/assets/meme.jpg)
 
